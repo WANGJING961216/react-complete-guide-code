@@ -19,6 +19,8 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangeFilter={filterChangeHandler}
         />
+        //{ means now we turn js code to jsx
+        //lists.map((item)=>{return object})
         {props.items.map((expense) => (
           <ExpenseItem
             title={expense.title}
