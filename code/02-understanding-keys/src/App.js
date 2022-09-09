@@ -28,6 +28,8 @@ const DUMMY_EXPENSES = [
 const App = () => {
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
 
+  //if change the prestate,the input must be a function.
+  //that might because if we just enter the preSate,we cant make sure the preState's change
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
       return [expense, ...prevExpenses];
